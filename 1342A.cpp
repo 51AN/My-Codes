@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#define ll                                               long long int
+#define ektu_chalak_na_hole_duniya_te_tika_boroi_kothin  (ios::sync_with_stdio(0),cin.tie(0));
+#define ekdin_to_ferot_jetei_hobe                        return 0;
+#define nl                                                "\n"
+using namespace std;
+int main()
+{
+
+    ektu_chalak_na_hole_duniya_te_tika_boroi_kothin;
+ 
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        ll x,y,a,b;
+        cin>>x>>y>>a>>b;
+
+        if(x > y) swap(x,y);
+        ll ans1 = 0, ans2 = 0;
+        ans1 = x*a + y*a;
+        ans2 = (y-x)*a + x*b;
+
+        cout<<min(ans1,ans2)<<nl;
+
+    }
+    
+
+    ekdin_to_ferot_jetei_hobe;
+}

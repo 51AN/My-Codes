@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+
+int main()
+{
+
+    int x,row,col;
+    printf("Enter any natural number:");
+    scanf("%d",&x);
+    printf("\n");
+
+    for(row=1;row<=x;row++)
+    {
+        for(col=1;col<=row;col++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+
+
+    return 0;
+}
+
