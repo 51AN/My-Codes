@@ -1,6 +1,5 @@
 //C code to show how many students are in Group A and Group B
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
     int x,n=0,i=0,j=0,countb=0,counta=0,a[200];
@@ -85,7 +84,6 @@ for(i=1;i<=x;i++)//repeating
     }
 
 
-    getch();
     return 0;
 }
 
