@@ -16,24 +16,32 @@ int main()
 
     while(t--)
     {
-        ll x;
-        cin>>x;
+        ll n;
+        cin>>n;
+        ll a[n];
+        ll f[n+1] = {0};
 
-        if(x%7 == 0)
+        for(int i=0 ; i<n ;i++)
         {
-            cout<<x<<nl;
+            cin>>a[i];
+            f[a[i]]++;
+
         }
-        else
+        bool found = false;
+        for(int i=0 ; i<=n ; i++)
         {
-            ll ans = -1;
-            for(int i = 0 ;i<10 ;i++)
+            if(f[i]>=3)
             {
-                if(((x - x%10 + i)%7) == 0)
-                {
-                    ans = (x - x%10 + i); 
-                }
+                cout<<i<<nl;
+                found = true;
+                break;
             }
-            cout<<ans<<nl;
+            
+
+        }
+        if(!found)
+        {
+            cout<<"-1"<<nl;
         }
 
     }
