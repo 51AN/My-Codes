@@ -4,6 +4,7 @@
 #define ekdin_to_ferot_jetei_hobe                        return 0;
 #define nl                                                "\n"
 
+
 using namespace std;
 
 
@@ -14,10 +15,35 @@ int main()
     ll t;
     cin>>t;
 
-    int k = min(5,t);
-    
+    while(t--)
+    {
+       
+        ll a,b;
+        cin>>a>>b;
+        
+        if((a!=0)&&(b!=0))
+        {
+            cout<<(a+(b*2)+1)<<nl;
+        }
+        else
+        {
+            if((a==0)&&(b!=0))
+                cout<<1<<nl;
+            else if((a!=0)&&(b==0))
+            {
+                cout<<(a+1)<<nl;
+            }
+            else
+            {
+                cout<<1<<nl;
+            }
+        }
 
         
+
+        
+        
+    }
 
     ekdin_to_ferot_jetei_hobe;
 }
