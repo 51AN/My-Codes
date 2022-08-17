@@ -51,10 +51,9 @@ void infixToPostfix(string s)
             st.pop();
         }
  
-        // If an operator is scanned
+        // If an operator is scanned this part is important
         else {
-            while (!st.empty()
-                   && prec(s[i]) <= prec(st.top())) {
+            while ( !st.empty() && (prec(s[i]) <= prec(st.top())) ) {
                 if (c == '^' && st.top() != '^')
                     break;
                 else {
