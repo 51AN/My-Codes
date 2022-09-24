@@ -12,7 +12,6 @@
 #define YES                                              cout<<"YES"<<endl
 #define NO                                               cout<<"NO"<<endl
 
-
 using namespace std;
 
 
@@ -22,6 +21,29 @@ int main()
     ektu_chalak_na_hole_duniya_te_tika_boroi_kothin;
     
     test(t){
+
+        ll n;
+        cin>>n;
+        string s1,s2;
+        cin>>s1>>s2;
+
+        f(i,n){
+            if(s1[i] == 'B'){
+                s1[i] = 'G';
+            }
+        }
+        f(i,n){
+            if(s2[i] == 'B'){
+                s2[i] = 'G';
+            }
+        }
+
+        if(s1 == s2){
+            YES;
+        }
+        else{
+            NO;
+        }
         
     }
 
