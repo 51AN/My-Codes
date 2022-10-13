@@ -21,19 +21,55 @@ int main()
 {
     fastIO;
     
-    // test(t){
+    test(t){
+
+        char a[8][8];
+
+        f(i,8){
+            f(j,8){
+                cin>>a[i][j];
+            }
+        }
+        bool validateRow = false;
+        bool validateCol = false;
+        f(i,8){
+            ll cntRow = 1;
+            f(j,7){
+                if(a[i][j] == 'R'){
+                    if(a[i][j+1] == 'R'){
+                        cntRow++;
+                    }
+                }
+                
+            }
+            if(cntRow == 8){
+                validateRow = true;
+            }
+        }
+
+        f(j,8){
+            ll cntCol = 1;
+            f(i,7){
+                   if(a[i][j] == 'B'){
+                    if(a[i+1][j] == 'B'){
+                        cntCol++;
+                    }
+                }
+            }
+            if(cntCol == 8){
+                validateCol = true;
+            }
+        }
+
+        if(validateRow){
+            cout<<"R"<<nl;
+        }
+        if(validateCol){
+            cout<<"B"<<nl;
+        }
         
-    // }
-
-    string s = "abce";
-    string t = "abcd";
-
-    if(s<t){
-        YES;
     }
-    else{
-        NO;
-    }
+
     
 
 

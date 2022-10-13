@@ -21,19 +21,43 @@ int main()
 {
     fastIO;
     
-    // test(t){
+    test(t){
+
+        ll n,q;
+        cin>>n>>q;
+
+        ll a[n],b[q];
+
+        f(i,n){
+            cin>>a[i];
+        }
+        f(i,q){
+            cin>>b[i];
+        }
+
+        ll ans[q] = {0};
+
+        f(i,q){
+            ll cnt = 0;
+            f(j,n){
+                if(b[i] >= a[j]){
+                    cnt += a[j];
+                }
+                else{
+                    break;
+                }
+            }
+            ans[i] = cnt;
+        }
+
+        f(i,q){
+            cout<<ans[i]<<" ";
+        }
+        cout<<nl;
+
         
-    // }
-
-    string s = "abce";
-    string t = "abcd";
-
-    if(s<t){
-        YES;
     }
-    else{
-        NO;
-    }
+
     
 
 

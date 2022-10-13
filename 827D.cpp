@@ -21,19 +21,35 @@ int main()
 {
     fastIO;
     
-    // test(t){
+    test(t){
+
+        ll n;
+        cin>>n;
+
+        ll a[n+1];
+
+        f1(i,n){
+            cin>>a[i];
+        }
+
+        ll ans = -1;
+        ll maxAns = -1;
+        for(int i = n ; i > 0 ; i--){
+            for(int j = n ; j > 0 ; j--){
+                if(__gcd(a[i],a[j]) == 1){
+                    ans = i + j;
+                    maxAns = max(maxAns, ans);
+                }
+            }
+        }
+
+        cout<<maxAns<<nl; 
+
+
+
         
-    // }
-
-    string s = "abce";
-    string t = "abcd";
-
-    if(s<t){
-        YES;
     }
-    else{
-        NO;
-    }
+
     
 
 

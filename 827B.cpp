@@ -21,19 +21,34 @@ int main()
 {
     fastIO;
     
-    // test(t){
+    test(t){
+
+        ll n;
+        cin>>n;
+        ll a[n];
+
+        f(i,n){
+            cin>>a[i];
+        }
+
+        sort(a, a+n);
+        bool validate = true;
+        for(int i = 0 ;i< n-1; i++){
+            if(a[i] == a[i+1]){
+                validate = false;
+                break;
+            }
+        }
+
+        if(validate){
+            YES;
+        }
+        else{
+            NO;
+        }
         
-    // }
-
-    string s = "abce";
-    string t = "abcd";
-
-    if(s<t){
-        YES;
     }
-    else{
-        NO;
-    }
+
     
 
 

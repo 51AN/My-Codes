@@ -21,19 +21,30 @@ int main()
 {
     fastIO;
     
-    // test(t){
+    test(t){
+
+        ll a,b,c;
+        cin>>a>>b>>c;
+        bool validate = false;
+        if((a+b) == c){
+            validate = true;
+        }
+        else if((a+c) == b){
+            validate = true;
+        }
+        else if((b+c) == a){
+            validate = true;
+        }
+
+        if(validate){
+            YES;
+        }
+        else{
+            NO;
+        }
         
-    // }
-
-    string s = "abce";
-    string t = "abcd";
-
-    if(s<t){
-        YES;
     }
-    else{
-        NO;
-    }
+
     
 
 

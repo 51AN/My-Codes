@@ -21,19 +21,41 @@ int main()
 {
     fastIO;
     
-    // test(t){
-        
-    // }
+    test(t){
+        string s = "a";
+        string t = "a";
+        test(n){
 
-    string s = "abce";
-    string t = "abcd";
+            ll type, k;
+            string x;
+            cin>>type>>k>>x;
 
-    if(s<t){
-        YES;
+            if(type == 1 ){
+
+                f(i,k){
+                    s += x;
+                }
+
+            }
+            else{
+                f(i,k){
+                    t += x;
+                }
+            }
+
+            if(s<t){
+                YES;
+            }
+            else{
+                NO;
+            }
+
+        }
+        s = "a";
+        t = "a";
+
     }
-    else{
-        NO;
-    }
+
     
 
 
