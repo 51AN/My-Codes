@@ -15,82 +15,22 @@
 
 using namespace std;
 
-
-
-    priority_queue<int, vector<int>, greater<int> >upper;
-    priority_queue<int>lower;
-
-
-    void AddNum(int x){
-
-        if(upper.size() == 0  && lower.size() == 0){
-            upper.push(x);
-        }
-        else
-     {    if(x>=upper.top()){
-            upper.push(x);
-        }
-        else{
-            lower.push(x);
-        }
-    }
-        if(upper.size() - lower.size() > 1){
-            int temp = 0;
-            temp = upper.top();
-            lower.push(temp);
-            upper.pop();
-        }
-        else if(lower.size() - upper.size() > 1){
-            int temp = 0;
-            temp = lower.top();
-            upper.push(temp);
-            lower.pop();
-        }
-
-
-        
-    }
-
-    double FindMedian(){
-        double median = 0;
-        if(lower.size()>upper.size()){
-            median = (double)lower.top();
-        }
-        else if(lower.size()<upper.size()){
-            median = (double)upper.top();
-        }
-        else{
-            median = (double)(((double)lower.top() + (double)upper.top())/(double)2.0);
-        }
-        return median;
-    }
-
-
-
 int main(){
 
     fastIO;
+    bool y=false;
+    int x = 0;
+    if(true)
+        x=1;
 
-    
-
-    AddNum(10);
-    AddNum(12);
-    AddNum(9);
-    // cout<<FindMedian()<<nl;
-    AddNum(8);
-    // cout<<FindMedian()<<nl;
-
-    cout<<lower.size()<<nl;
-    cout<<upper.size()<<nl;
-
-    while(lower.size()!=0){
-        cout<<lower.top()<<nl;
-        lower.pop();
-    }
-    while(upper.size()!=0){
-        cout<<upper.top()<<nl;
-        upper.pop();
-    }
+    if(true)
+    {    x=2;
+    if(true)
+        x=3;
+    else
+        x=-1;}
+    else
+        x=-2;
 
 
 
