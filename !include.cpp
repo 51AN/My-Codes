@@ -23,6 +23,8 @@ int main(){
     int year;
     int day;
 
+    cin>>day>>month>>year;
+
     if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10) && day == 31) 
     {
         day = 1;   month++;
@@ -60,6 +62,9 @@ int main(){
     {
         day = day + 1;
     }
+
+
+    cout<<day<<"/"<<month<<"/"<<year<<nl;
 
     re;
 
