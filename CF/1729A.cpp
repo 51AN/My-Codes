@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #define ll                                               long long int
-#define ektu_chalak_na_hole_duniya_te_tika_boroi_kothin  (ios::sync_with_stdio(0),cin.tie(0));
-#define ekdin_to_ferot_jetei_hobe                        return 0;
+#define fastIO  (ios::sync_with_stdio(0),cin.tie(0));
+#define re                        return 0;
 #define nl                                                "\n"
 #define f(i,n)                                           for(int i = 0 ; i < n ; i ++)
 #define f1(i,n)                                          for(int i = 1 ; i <= n ; i ++)
@@ -15,35 +15,41 @@
 
 using namespace std;
 
+int main(){
+    fastIO;
 
+    test(t){
+        int a,b,c;
+        cin>>a>>b>>c;
 
-int main()
-{
-    ektu_chalak_na_hole_duniya_te_tika_boroi_kothin;
-    
-    
-    ll n, m;
-    cin>>n>>m;
-    ll cnt = 0;
+        int time1 = 0;
+        int time2 = 0;
 
-    while(n!=m){
-        if(m>n){
-            if(m%2){
-                m++;
-                cnt++;
-            }else{
-                m/=2;
-                cnt++;
-            }
+        time1 = a-1;
+
+        if(c<b){
+            time2 = b - 1;
+        }else{
+            time2 = (c-b) + (c - 1);
         }
-        else if(n>m){
-            m++;
-            cnt++;
+
+        
+
+
+        if(time1<time2){
+            cout<<1<<nl;
         }
+        else if(time1>time2){
+            cout<<2<<nl;
+        }
+        else{
+            cout<<3<<nl;
+        }
+
+
     }
-    cout<<cnt<<nl;
 
-    
 
-    ekdin_to_ferot_jetei_hobe;
+
+    re;
 }

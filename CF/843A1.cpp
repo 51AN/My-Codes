@@ -5,7 +5,7 @@
 #define nl                                                "\n"
 #define f(i,n)                                           for(int i = 0 ; i < n ; i ++)
 #define f1(i,n)                                          for(int i = 1 ; i <= n ; i ++)
-#define fb(i,n)                                          for(int i = n - 1 ; i => 0 ; i --)
+#define fb(i,n)                                          for(int i = n - 1 ; i >= 0 ; i --)
 #define v(i)                                             vector<int>v[i];
 #define sortv(a)                                         sort(a.begin(),a.end())
 #define test(t)                                          ll t; cin>>t; while(t--)
@@ -21,29 +21,17 @@ int main()
 {
     ektu_chalak_na_hole_duniya_te_tika_boroi_kothin;
     
-    
-    ll n, m;
-    cin>>n>>m;
-    ll cnt = 0;
+    test(t){
+        string s;
+        cin>>s;
 
-    while(n!=m){
-        if(m>n){
-            if(m%2){
-                m++;
-                cnt++;
-            }else{
-                m/=2;
-                cnt++;
-            }
-        }
-        else if(n>m){
-            m++;
-            cnt++;
-        }
+        string a[3];
+
+        
+
+
+
     }
-    cout<<cnt<<nl;
-
-    
 
     ekdin_to_ferot_jetei_hobe;
 }

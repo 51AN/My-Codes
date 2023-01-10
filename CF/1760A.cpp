@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #define ll                                               long long int
-#define ektu_chalak_na_hole_duniya_te_tika_boroi_kothin  (ios::sync_with_stdio(0),cin.tie(0));
-#define ekdin_to_ferot_jetei_hobe                        return 0;
+#define fastIO  (ios::sync_with_stdio(0),cin.tie(0));
+#define re                        return 0;
 #define nl                                                "\n"
 #define f(i,n)                                           for(int i = 0 ; i < n ; i ++)
 #define f1(i,n)                                          for(int i = 1 ; i <= n ; i ++)
@@ -16,34 +16,22 @@
 using namespace std;
 
 
+int main(){
 
-int main()
-{
-    ektu_chalak_na_hole_duniya_te_tika_boroi_kothin;
-    
-    
-    ll n, m;
-    cin>>n>>m;
-    ll cnt = 0;
-
-    while(n!=m){
-        if(m>n){
-            if(m%2){
-                m++;
-                cnt++;
-            }else{
-                m/=2;
-                cnt++;
-            }
+    fastIO;
+    test(t){
+        ll a,b,c;
+        cin>>a>>b>>c;
+        // cout<<"a; "<<a<<"b; "<<b<<"c; "<<c<<nl;
+        if((a<=b && b<=c) || (c<=b && b<=a)){
+            cout<<b<<nl;
         }
-        else if(n>m){
-            m++;
-            cnt++;
+        else if((a<=c && c<=b) || (b<=c && c<=a)){
+            cout<<c<<nl;
+        }
+        else if((b<=a && a<=c) || (c<=a && a<=b)){
+            cout<<a<<nl;
         }
     }
-    cout<<cnt<<nl;
-
-    
-
-    ekdin_to_ferot_jetei_hobe;
+    re;
 }

@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 #define ll                                               long long int
-#define ektu_chalak_na_hole_duniya_te_tika_boroi_kothin  (ios::sync_with_stdio(0),cin.tie(0));
-#define ekdin_to_ferot_jetei_hobe                        return 0;
+#define fastIO  (ios::sync_with_stdio(0),cin.tie(0));
+#define re                        return 0;
 #define nl                                                "\n"
 #define f(i,n)                                           for(int i = 0 ; i < n ; i ++)
 #define f1(i,n)                                          for(int i = 1 ; i <= n ; i ++)
-#define fb(i,n)                                          for(int i = n - 1 ; i => 0 ; i --)
+#define fb(i,n)                                          for(int i = n - 1 ; i >= 0 ; i --)
 #define v(i)                                             vector<int>v[i];
 #define sortv(a)                                         sort(a.begin(),a.end())
 #define test(t)                                          ll t; cin>>t; while(t--)
@@ -16,34 +16,26 @@
 using namespace std;
 
 
+int main(){
 
-int main()
-{
-    ektu_chalak_na_hole_duniya_te_tika_boroi_kothin;
-    
-    
-    ll n, m;
-    cin>>n>>m;
-    ll cnt = 0;
-
-    while(n!=m){
-        if(m>n){
-            if(m%2){
-                m++;
-                cnt++;
-            }else{
-                m/=2;
-                cnt++;
-            }
+    fastIO;
+    string s;
+    cin>>s;
+    int n = s.size();
+    int i = 0;
+    if(s[0] == '9'){
+            ++i;
         }
-        else if(n>m){
-            m++;
-            cnt++;
+    for(;i<n;i++){
+        
+        if(s[i] > '4'){
+            s[i] = ('9' - s[i]) + '0';
         }
+        
     }
-    cout<<cnt<<nl;
 
-    
+    cout<<s<<nl;
 
-    ekdin_to_ferot_jetei_hobe;
+
+    re;
 }
