@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 #define ll                                               long long int
-#define fastIO                                           (ios::sync_with_stdio(0),cin.tie(0));
-#define re                                               return 0;
-#define nl                                               "\n"
+#define fastIO  (ios::sync_with_stdio(0),cin.tie(0));
+#define re                        return 0;
+#define nl                                                "\n"
 #define f(i,n)                                           for(int i = 0 ; i < n ; i ++)
 #define f1(i,n)                                          for(int i = 1 ; i <= n ; i ++)
 #define fb(i,n)                                          for(int i = n - 1 ; i >= 0 ; i --)
@@ -20,40 +20,23 @@ int main(){
 
     fastIO;
     test(t){
-        ll len;
-        cin>>len;
-        string s;
-        cin>>s;
-        ll x = 0 ;
-        ll y = 0;
-        f(i,len){
-            if(s[i] == 'L'){
-                --x;
-            }
-            else if(s[i] == 'R'){
-                ++x;
-            }
-            else if(s[i] == 'U'){
-                ++y;
-            }
-            else if(s[i] == 'D'){
-                --y;
-            }
-            if(x == 1 && y == 1){
-                cout<<"YES"<<nl;
-                break;
+        ll n, min = INT_MAX;
+        cin>>n;
+        ll a[n];
+        f(i,n){
+            cin>>a[i];
+            if(a[i]<min){
+                min = a[i];
             }
         }
 
-        if(x != 1 && y != 1){
-            cout<<"NO"<<nl;
-        }
-        
+        ll cnt = 0;
 
-        
+        f(i,n){
+            cnt += (a[i] - min);
+        }
+
+        cout<<cnt<<nl;
     }
-
-    
-
     re;
 }

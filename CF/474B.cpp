@@ -19,39 +19,36 @@ string s = "codeforces";
 int main(){
 
     fastIO;
-    test(t){
-        ll len;
-        cin>>len;
-        string s;
-        cin>>s;
-        ll x = 0 ;
-        ll y = 0;
-        f(i,len){
-            if(s[i] == 'L'){
-                --x;
-            }
-            else if(s[i] == 'R'){
-                ++x;
-            }
-            else if(s[i] == 'U'){
-                ++y;
-            }
-            else if(s[i] == 'D'){
-                --y;
-            }
-            if(x == 1 && y == 1){
-                cout<<"YES"<<nl;
-                break;
-            }
-        }
-
-        if(x != 1 && y != 1){
-            cout<<"NO"<<nl;
-        }
-        
-
-        
+    ll n;
+    cin>>n;
+    ll a[n+1], b[n+1];
+    b[0] = 0;
+    f1(i,n){
+        cin>>a[i];
+        b[i] = b[i-1]+a[i];
     }
+
+    ll cnt = 1;
+    ll worms[b[n]+1];
+
+    f1(i,b[n]){
+        if(i>b[cnt]){
+            cnt++;
+        }
+        worms[i] = cnt;
+    }
+
+    ll m;
+    cin>>m;
+    ll c[m+1];
+    f1(i,m){
+        cin>>c[i];
+        cout<<worms[c[i]]<<nl;
+    }
+    // f1(i,m){
+    //     cout<<c[i]<<" ";
+    // }
+    // cout<<nl;
 
     
 

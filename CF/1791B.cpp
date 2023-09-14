@@ -26,6 +26,7 @@ int main(){
         cin>>s;
         ll x = 0 ;
         ll y = 0;
+        bool token = true;
         f(i,len){
             if(s[i] == 'L'){
                 --x;
@@ -41,11 +42,12 @@ int main(){
             }
             if(x == 1 && y == 1){
                 cout<<"YES"<<nl;
+                token = false;
                 break;
             }
         }
 
-        if(x != 1 && y != 1){
+        if(token){
             cout<<"NO"<<nl;
         }
         

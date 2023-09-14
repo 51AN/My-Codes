@@ -20,37 +20,12 @@ int main(){
 
     fastIO;
     test(t){
-        ll len;
-        cin>>len;
         string s;
         cin>>s;
-        ll x = 0 ;
-        ll y = 0;
-        f(i,len){
-            if(s[i] == 'L'){
-                --x;
-            }
-            else if(s[i] == 'R'){
-                ++x;
-            }
-            else if(s[i] == 'U'){
-                ++y;
-            }
-            else if(s[i] == 'D'){
-                --y;
-            }
-            if(x == 1 && y == 1){
-                cout<<"YES"<<nl;
-                break;
-            }
-        }
+        int a = s[0] - 48;
+        int b = s[2] - 48;
 
-        if(x != 1 && y != 1){
-            cout<<"NO"<<nl;
-        }
-        
-
-        
+        cout<<a+b<<nl;
     }
 
     
