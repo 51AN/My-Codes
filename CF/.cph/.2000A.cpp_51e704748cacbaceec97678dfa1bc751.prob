@@ -1,0 +1,1 @@
+{"name":"Local: 2000A","url":"d:\\My codes\\Codes Repository for git\\My-Codes\\CF\\2000A.cpp","tests":[{"id":1730397226985,"input":"7\n100\n1010\n101\n105\n2033\n1019\n1002","output":"NO\nYES\nNO\nYES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My codes\\Codes Repository for git\\My-Codes\\CF\\2000A.cpp","group":"local","local":true}

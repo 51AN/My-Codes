@@ -1,0 +1,1 @@
+{"name":"Local: 1992A","url":"d:\\My codes\\Codes Repository for git\\My-Codes\\CF\\1992A.cpp","tests":[{"id":1728205918466,"input":"2\n2 3 4\n10 1 10","output":"100\n600"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\My codes\\Codes Repository for git\\My-Codes\\CF\\1992A.cpp","group":"local","local":true}
