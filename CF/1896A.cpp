@@ -19,7 +19,6 @@ int main(){
     test(t){
         ll n;
         cin >> n;
-        
     }
     re;
     
