@@ -23,7 +23,7 @@ public:
         return h; // Return the h-index
     }
 };
-j
+
 int main() {
     Solution sol;
     vector<int> citations1 = {3, 0, 6, 1, 5};
